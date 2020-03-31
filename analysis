@@ -1,6 +1,11 @@
 import pandas as pd
 import numpy as np
 import datetime
+import plotly.express as px
+from sklearn.linear_model import LinearRegression
+from matplotlib.pyplot import figure, grid
+import matplotlib.pyplot as plt
+
 
 def get_dataframe(dataset):
   url = f"https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_{dataset.lower()}_global.csv"
